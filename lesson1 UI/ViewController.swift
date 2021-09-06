@@ -94,6 +94,7 @@ class ViewController: UIViewController {
         
     }
     
+
     
     // Вопрос. У меня почему то попросило проставить координату X и Y у ScrollView, хотя у тебя на уроке не было такой ошибки.
     

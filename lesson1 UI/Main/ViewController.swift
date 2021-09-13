@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var loginTextField: UITextField!
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
     }
     
-   
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -88,19 +88,45 @@ class ViewController: UIViewController {
         
         if login == "admin" && password == "123" {
             print("Заходи!")
+            self.showAdminScene()
+            
+            
         } else {
             print("Уходи")
+            self.showAlert()
         }
         
     }
     
-
+    private func showAdminScene() {
+        
+        let storyBoard = UIStoryboard(name: "tabbar", bundle: nil)
+        let viewController = storyBoard.instantiateInitialViewController()
+        if let viewController = viewController as? TabBarViewController {
+            self.present(viewController, animated: true)
+        }
+        
+    }
     
-    // Вопрос. У меня почему то попросило проставить координату X и Y у ScrollView, хотя у тебя на уроке не было такой ошибки.
-    
-    
-    
-
-
+    private func showAlert () {
+        let allertController = UIAlertController(title: "Ошбика",
+                                                 message: "Введены неверные данные",
+                                                 preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK",
+                                   style: .cancel)
+        
+        allertController.addAction(action)
+        self.present(allertController, animated: true)
+    }
 }
+
+
+
+
+
+
+
+
+
 

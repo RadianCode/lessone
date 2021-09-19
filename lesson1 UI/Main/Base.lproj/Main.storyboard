@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -19,8 +19,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVC-vK-SuY">
                                 <rect key="frame" x="1" y="1" width="414" height="894"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHw-Tj-HUz">
-                                        <rect key="frame" x="143.5" y="150" width="127" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VKApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHw-Tj-HUz">
+                                        <rect key="frame" x="154" y="150" width="106" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" systemColor="systemIndigoColor"/>
                                         <nil key="highlightedColor"/>
@@ -55,6 +55,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstItem="ITg-m4-qAr" firstAttribute="centerX" secondItem="nVC-vK-SuY" secondAttribute="centerX" id="4Hl-jr-fwd"/>
                                     <constraint firstItem="5LG-eU-u6s" firstAttribute="centerX" secondItem="nVC-vK-SuY" secondAttribute="centerX" id="68d-NH-Ypf"/>
@@ -88,6 +89,7 @@
                             <constraint firstItem="nVC-vK-SuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="tD8-aO-7oW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lI9-6a-SBy"/>
                     <connections>
                         <outlet property="loginTextField" destination="aVw-xL-drB" id="gAq-Jf-RXw"/>
                         <outlet property="passwordTextField" destination="Y0H-qy-H58" id="w62-cA-noj"/>
@@ -96,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="435" y="145"/>
+            <point key="canvasLocation" x="1344.9275362318842" y="144.64285714285714"/>
         </scene>
     </scenes>
     <resources>
@@ -105,6 +107,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

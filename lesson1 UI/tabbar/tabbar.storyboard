@@ -42,6 +42,14 @@
                                     <segue destination="nnS-mI-QYF" kind="show" id="t1p-PX-Dnx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQb-XP-YXs">
+                                <rect key="frame" x="88" y="556" width="145" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Переход к таблице"/>
+                                <connections>
+                                    <action selector="goToTableViewCell:" destination="yEE-9f-L3m" eventType="touchUpInside" id="WDn-U8-9dw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Er-im-AbJ"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -54,8 +62,9 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XX5-sH-aNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yEE-9f-L3m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="841" y="360"/>
+            <point key="canvasLocation" x="840.57971014492762" y="359.59821428571428"/>
         </scene>
         <!--Item-->
         <scene sceneID="VOW-fu-Stn">
